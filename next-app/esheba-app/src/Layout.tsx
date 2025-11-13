@@ -8,22 +8,28 @@ import Scripts from 'src/Scripts';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { ThemeProvider } from '@/components/theme-provider/theme-provider.dev';
 import { VideoProvider } from './contexts/VideoContext';
-import { IBM_Plex_Sans, IBM_Plex_Mono } from 'next/font/google';
+import { Inter, IBM_Plex_Mono } from 'next/font/google';
 import localFont from 'next/font/local';
 
-const heading = localFont({
-  src: [
-    {
-      path: './assets/fonts/Boldonse-Regular.ttf',
-      weight: '400',
-      style: 'normal',
-    },
-  ],
+// const heading = localFont({
+//   src: [
+//     {
+//       path: './assets/fonts/Boldonse-Regular.ttf',
+//       weight: '400',
+//       style: 'normal',
+//     },
+//   ],
+//   variable: '--font-heading',
+//   display: 'swap',
+// });
+const heading = Inter({
+  weight: ['400', '500', '600', '700'],
   variable: '--font-heading',
+  subsets: ['latin', 'latin-ext'],
   display: 'swap',
 });
 
-const body = IBM_Plex_Sans({
+const body = Inter({
   weight: ['400', '500', '600'],
   variable: '--font-body',
   subsets: ['latin', 'latin-ext'],
