@@ -17,7 +17,7 @@ import { isMobile } from '@/utils/isMobile';
 import { extractVideoId } from '@/utils/video';
 import { NoDataFallback } from '@/utils/NoDataFallback';
 import { cn, getYouTubeThumbnail } from '@/lib/utils';
-import { Text, useSitecore, Link, Placeholder, RichText, NextImage, withDatasourceCheck, Image as Image_8a80e63291fea86e0744df19113dc44bec187216, CdpHelper } from '@sitecore-content-sdk/nextjs';
+import { Text, useSitecore, Link, Placeholder, RichText, NextImage, withDatasourceCheck, Image, CdpHelper } from '@sitecore-content-sdk/nextjs';
 import { Default as Default_86213dc9d44683259b98a62fc55d1fe1127767c5 } from '@/components/image/ImageWrapper.dev';
 import { ButtonBase } from '@/components/button-component/ButtonComponent';
 import * as TooltipPrimitive from '@radix-ui/react-tooltip';
@@ -87,7 +87,6 @@ import Link_a258c208ba01265ca0aa9c7abae745cc7141aa63 from 'next/link';
 import { Form, FormControl, FormField, FormItem, FormMessage } from '@/components/ui/form';
 import { SubmissionFormDefault } from 'src/components/submission-form/SubmissionFormDefault.dev';
 import { SubmissionFormCentered } from 'src/components/submission-form/SubmissionFormCentered.dev';
-import Image from 'next/image';
 import Head from 'next/head';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
 import { PromoImageDefault } from 'src/components/promo-image/PromoImageDefault.dev';
@@ -148,6 +147,7 @@ import { GlobalFooterBlueCentered } from 'src/components/global-footer/GlobalFoo
 import { GlobalFooterBlueCompact } from 'src/components/global-footer/GlobalFooterBlueCompact.dev';
 import { Default as Default_ab2672a1842323b1b2777329b20d99d0ca10e44b } from '@/components/animated-section/AnimatedSection.dev';
 import client from 'lib/sitecore-client';
+import Image_5d8ce56058442d94361877e28c501c951a554a6a from 'next/image';
 import * as FEAAS from '@sitecore-feaas/clientside/react';
 import nextConfig from 'next.config';
 import { pageView } from '@sitecore-cloudsdk/events/browser';
@@ -260,7 +260,7 @@ const importMap = [
       { name: 'RichText', value: RichText },
       { name: 'NextImage', value: NextImage },
       { name: 'withDatasourceCheck', value: withDatasourceCheck },
-      { name: 'Image', value: Image_8a80e63291fea86e0744df19113dc44bec187216 },
+      { name: 'Image', value: Image },
       { name: 'CdpHelper', value: CdpHelper },
     ]
   },
@@ -722,12 +722,6 @@ const importMap = [
     ]
   },
   {
-    module: 'next/image',
-    exports: [
-      { name: 'default', value: Image },
-    ]
-  },
-  {
     module: 'next/head',
     exports: [
       { name: 'default', value: Head },
@@ -1094,6 +1088,12 @@ const importMap = [
     module: 'lib/sitecore-client',
     exports: [
       { name: 'default', value: client },
+    ]
+  },
+  {
+    module: 'next/image',
+    exports: [
+      { name: 'default', value: Image_5d8ce56058442d94361877e28c501c951a554a6a },
     ]
   },
   {

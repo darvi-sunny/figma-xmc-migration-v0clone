@@ -9,7 +9,6 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { ThemeProvider } from '@/components/theme-provider/theme-provider.dev';
 import { VideoProvider } from './contexts/VideoContext';
 import { Inter, IBM_Plex_Mono } from 'next/font/google';
-import localFont from 'next/font/local';
 
 // const heading = localFont({
 //   src: [

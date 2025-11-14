@@ -45,6 +45,16 @@ import * as SubmissionForm from 'src/components/submission-form/SubmissionForm';
 import * as submissionformprops from 'src/components/submission-form/submission-form.props';
 import * as SlideCarouseldev from 'src/components/slide-carousel/SlideCarousel.dev';
 import * as slidecarouselprops from 'src/components/slide-carousel/slide-carousel.props';
+import * as EshebaWhyChooseUs from 'src/components/sitecore/EshebaWhyChooseUs';
+import * as EshebaTestimonials from 'src/components/sitecore/EshebaTestimonials';
+import * as EshebaTestimonial from 'src/components/sitecore/EshebaTestimonial';
+import * as EshebaSpecialists from 'src/components/sitecore/EshebaSpecialists';
+import * as EshebaSpecialistCard from 'src/components/sitecore/EshebaSpecialistCard';
+import * as EshebaQualityHealth from 'src/components/sitecore/EshebaQualityHealth';
+import * as EshebaNewsletter from 'src/components/sitecore/EshebaNewsletter';
+import * as EshebaHero from 'src/components/sitecore/EshebaHero';
+import * as EshebaHeader from 'src/components/sitecore/EshebaHeader';
+import * as EshebaFooter from 'src/components/sitecore/EshebaFooter';
 import * as SiteMetadata from 'src/components/site-metadata/SiteMetadata';
 import * as sitemetadataprops from 'src/components/site-metadata/site-metadata.props';
 import * as SecondaryNavigation from 'src/components/secondary-navigation/SecondaryNavigation';
@@ -273,6 +283,16 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['submission-form', { ...submissionformprops }],
   ['SlideCarousel', { ...SlideCarouseldev }],
   ['slide-carousel', { ...slidecarouselprops }],
+  ['EshebaWhyChooseUs', { ...EshebaWhyChooseUs }],
+  ['EshebaTestimonials', { ...EshebaTestimonials }],
+  ['EshebaTestimonial', { ...EshebaTestimonial }],
+  ['EshebaSpecialists', { ...EshebaSpecialists }],
+  ['EshebaSpecialistCard', { ...EshebaSpecialistCard }],
+  ['EshebaQualityHealth', { ...EshebaQualityHealth }],
+  ['EshebaNewsletter', { ...EshebaNewsletter }],
+  ['EshebaHero', { ...EshebaHero }],
+  ['EshebaHeader', { ...EshebaHeader }],
+  ['EshebaFooter', { ...EshebaFooter }],
   ['SiteMetadata', { ...SiteMetadata }],
   ['site-metadata', { ...sitemetadataprops }],
   ['SecondaryNavigation', { ...SecondaryNavigation }],
